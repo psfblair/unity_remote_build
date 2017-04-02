@@ -1,0 +1,43 @@
+# =============== #
+# Unity generated #
+# =============== #
+Temp/
+Obj/
+Bin/
+UnityGenerated/
+Library/
+Assets/AssetStoreTools*
+Assets/Plugins/*.dll
+App/
+UWP/
+project.json
+project.lock.json
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+.vs/
+ExportedObj/
+obj/
+*.svd
+*.userprefs
+/*.csproj
+*.csproj
+*.pidb
+*.suo
+/*.sln
+*.sln
+*.user
+*.unityproj
+*.ipch
+*.opensdf
+*.sdf
+*.tlog
+*.log
+*.idb
+*.opendb
+WSATestCertificate.pfx
+WSATestCertificate.pfx.meta
+
+# macOS
+.DS_Store

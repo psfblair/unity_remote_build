@@ -37,7 +37,7 @@ with `git init`, you should issue the git command to allow you to push to a
 checked-out (non-bare) repository:
 
         cd [PROJECT_NAME]
-        &#35; Allow pushing to checked-out (non-bare) repository
+        # Allow pushing to checked-out (non-bare) repository
         git config receive.denyCurrentBranch updateInstead
 
 2. Load the environment variables you set up in env.sh or env.bat.

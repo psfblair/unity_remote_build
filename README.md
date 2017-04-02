@@ -23,7 +23,7 @@ the one you already have with the one in this project.
    You can pull down the files in the master branch of this repository and unzip
    them into your project using the command
 
-    curl https://codeload.github.com/psfblair/unity_remote_build/zip/master | tar --strip-components 1 -xvpzf -
+       curl https://codeload.github.com/psfblair/unity_remote_build/zip/master | tar --strip-components 1 -xvpzf -
 
 2. Create an environment file based on modifying the settings in env.sh.sample
 (or env.bat.sample, depending on your OS) to the values appropriate to your 
@@ -36,9 +36,9 @@ push your changes to local code. Once you have creatd the remote repository
 with `git init`, you should issue the git command to allow you to push to a 
 checked-out (non-bare) repository:
 
-    cd [PROJECT_NAME]
-    &#35; Allow pushing to checked-out (non-bare) repository
-    git config receive.denyCurrentBranch updateInstead
+        cd [PROJECT_NAME]
+        &#35; Allow pushing to checked-out (non-bare) repository
+        git config receive.denyCurrentBranch updateInstead
 
 2. Load the environment variables you set up in env.sh or env.bat.
 
@@ -50,16 +50,16 @@ variable to that IP address. Note that the first time you run this script
 you will need to initialize your `/etc/hosts` file with a line for that
 host alias, e.g.
 
-     0.0.0.0 holodevelop
+        0.0.0.0 holodevelop
 
 4. Set up the remote of your local Git repository to point to the remote
 server's Git repository:
 
-    git remote add holodevelop ssh://[USER]@[HOST]/[PATH-TO-PROJECT-WITH-FORWARD-SLASHES]
+       git remote add holodevelop ssh://[USER]@[HOST]/[PATH-TO-PROJECT-WITH-FORWARD-SLASHES]
 
    Now you should be able to push to the remote repository with a command such as
 
-    git push holodevelop master
+       git push holodevelop master
 
 5. If you are using dlls or other plugins that you do not want to commit to
 source control, the easiest thing to do is to mount the project directory on 
@@ -73,7 +73,7 @@ copy it to the Assets/Plugins directory in the mounted folder.
    You can find copy scripts suitable for post-build configurations in the
    GitHub repository
 
-    https://github.com/psfblair/unity_fsharp
+       https://github.com/psfblair/unity_fsharp
 
 6. Once the code and any necessary dlls have been pushed you should be able 
 to run `remote_build.sh` (or `remote_build.bat`) to run the build on the 

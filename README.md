@@ -11,7 +11,7 @@ configuration (which can be changed in msbuild_headless.bat).
 You'll need to install ssh, Unity, and Visual Studio on the remote machine. 
 You'll also need to open Unity to activate it.
 
-See [http://seriouscodeblog.blogspot.ca/2017/03/write-hololens-apps-on-macos-linux-1.html]
+See http://seriouscodeblog.blogspot.ca/2017/03/write-hololens-apps-on-macos-linux-1.html
 for more details about remote build server setup.
 
 ## Installation
@@ -20,8 +20,8 @@ for more details about remote build server setup.
 customizations to your own .gitignore file you may not want to simply clobber 
 the one you already have with the one in this project.
 
-You can pull down the files in the master branch of this repository and unzip
-them into your project using the command
+   You can pull down the files in the master branch of this repository and unzip
+   them into your project using the command
 
     curl https://codeload.github.com/psfblair/unity_remote_build/zip/master | tar --strip-components 1 -xvpzf -
 
@@ -37,7 +37,7 @@ with `git init`, you should issue the git command to allow you to push to a
 checked-out (non-bare) repository:
 
     cd [PROJECT_NAME]
-    # Allow pushing to checked-out (non-bare) repository
+    &#35; Allow pushing to checked-out (non-bare) repository
     git config receive.denyCurrentBranch updateInstead
 
 2. Load the environment variables you set up in env.sh or env.bat.
@@ -57,8 +57,7 @@ server's Git repository:
 
     git remote add holodevelop ssh://[USER]@[HOST]/[PATH-TO-PROJECT-WITH-FORWARD-SLASHES]
 
-Now you should be able to push to the remote repository with a command 
-such as
+   Now you should be able to push to the remote repository with a command such as
 
     git push holodevelop master
 
@@ -67,12 +66,12 @@ source control, the easiest thing to do is to mount the project directory on
 the remote machine. When you build the dll locally, have a post-build step
 copy it to the Assets/Plugins directory in the mounted folder.
 
-The `update_remote_ip.sh` script already tries to mount the remote `/Users`
-directory to the location specified by the `LOCAL_MOUNT_POINT` environment 
-variable.
+   The `update_remote_ip.sh` script already tries to mount the remote `/Users`
+   directory to the location specified by the `LOCAL_MOUNT_POINT` environment 
+   variable.
 
-You can find copy scripts suitable for post-build configurations in the
-GitHub repository
+   You can find copy scripts suitable for post-build configurations in the
+   GitHub repository
 
     https://github.com/psfblair/unity_fsharp
 
